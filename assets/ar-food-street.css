@@ -1,0 +1,11 @@
+:root{--accent:#800020;--muted:#666}
+body{background:#fff;color:#111}
+.card{padding:20px;border-radius:12px;background:#fff}
+h1{color:var(--accent)}
+.dish-card{display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;border:1px solid #eee;background:#fafafa}
+.dish-img{width:96px;height:72px;border-radius:8px;object-fit:cover;background:#eee}
+.dish-meta{flex:1}
+.rating{font-weight:700;color:var(--accent)}
+.reviews{font-size:13px;color:var(--muted);margin-top:6px}
+.overlay{padding:12px;border-radius:10px;border:1px dashed #ddd;background:#fff}
+.small{font-size:13px;color:var(--muted)}

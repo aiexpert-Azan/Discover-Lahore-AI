@@ -1,0 +1,8 @@
+:root{--accent:#800020;--danger:#b91c1c;--muted:#666}
+body{background:#fff;color:#111}
+.card{padding:20px;border-radius:12px;background:#fff}
+h1{color:var(--accent)}
+.alert-item{padding:10px;border-radius:8px;border:1px solid #eee;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.alert-type{font-weight:700}
+.alert-meta{font-size:13px;color:var(--muted)}
+.alert-danger{color:var(--danger)}

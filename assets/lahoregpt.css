@@ -1,0 +1,23 @@
+:root{
+  --bg:#f7f7fb; --card:#fff; --accent:#8b0000; --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;background:var(--bg);margin:0;padding:24px}
+.lg-container{max-width:980px;margin:0 auto}
+.lg-header{margin-bottom:16px}
+.lg-header h1{margin:0;color:var(--accent)}
+.subtitle{margin:4px 0 0;color:var(--muted)}
+.lg-main{display:grid;grid-template-columns:1fr 280px;gap:16px}
+.chat{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 6px 16px rgba(0,0,0,.06)}
+.messages{height:520px;overflow:auto;padding:8px;border:1px solid #eee;border-radius:6px;background:#fcfcff}
+.msg{margin:8px 0;display:flex}
+.msg.user{justify-content:flex-end}
+.bubble{max-width:76%;padding:10px 12px;border-radius:12px;background:#f1f1f6}
+.msg.user .bubble{background:#e8f0ff}
+.controls{display:flex;gap:8px;margin-top:8px}
+#userInput{flex:1;padding:10px;border-radius:6px;border:1px solid #ddd}
+#sendBtn,#micBtn{padding:8px 12px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.settings{background:#fff;padding:12px;border-radius:8px;border:1px solid #eee}
+.settings h3{margin-top:0}
+.note{display:block;margin-top:8px;color:var(--muted);font-size:12px}
+.lg-footer{margin-top:12px;color:var(--muted)}

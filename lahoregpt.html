@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LahoreGPT — AI Tour Companion</title>
+  <link rel="stylesheet" href="assets/lahoregpt.css" />
+</head>
+<body>
+  <div class="lg-container">
+    <header class="lg-header">
+      <h1>LahoreGPT — Your AI Tour Companion</h1>
+      <p class="subtitle">Ask about history, plan trips, or get voice-guided facts — like a friendly local guide.</p>
+    </header>
+
+    <main class="lg-main">
+      <section id="chat" class="chat">
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <div class="controls">
+          <input id="userInput" type="text" placeholder="Ask me about Lahore..." aria-label="Message input" />
+          <button id="sendBtn">Send</button>
+          <button id="micBtn" title="Toggle microphone">🎤</button>
+        </div>
+      </section>
+
+      <aside class="settings">
+        <h3>Settings</h3>
+        <label><input id="useOpenAI" type="checkbox" /> Use OpenAI API</label>
+        <label>API Key (optional): <input id="apiKey" type="password" placeholder="sk-..." /></label>
+        <label><input id="autoSpeak" type="checkbox" checked /> Auto speak responses</label>
+        <small class="note">If no API key is provided, the assistant falls back to local responses and sample facts.</small>
+      </aside>
+    </main>
+
+    <footer class="lg-footer">
+      <small>Built for Discover Lahore — lightweight client-side prototype. See README for wiring instructions.</small>
+    </footer>
+  </div>
+  <script src="assets/lahoregpt.js"></script>
+</body>
+</html>
